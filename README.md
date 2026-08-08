@@ -6,15 +6,6 @@
   </p>
 
   <p align="center">
-    <a href="#-fonctionnalités">Fonctionnalités</a> •
-    <a href="#-installation">Installation</a> •
-    <a href="#-utilisation">Utilisation</a> •
-    <a href="#-configuration">Configuration</a> •
-    <a href="#-dépendances">Dépendances</a> •
-    <a href="#-structure-du-projet">Structure</a>
-  </p>
-
-  <p align="center">
     <img src="https://img.shields.io/badge/Platform-Linux%20%2F%20X11-blue?style=for-the-badge&logo=linux" alt="Platform Linux" />
     <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
     <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
