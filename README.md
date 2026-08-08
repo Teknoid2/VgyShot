@@ -32,6 +32,20 @@
 
 **vGyShot** est un outil puissant et polyvalent conçu pour les environnements Linux (Cinnamon, GNOME, XFCE, MATE, KDE). Il combine la capture d'écran de précision, l'assemblage dynamique de captures défilantes (scrolling screenshots) et l'enregistrement vidéo avec capture audio multicanale, le tout couplé à un système de téléversement automatique vers le cloud et de copie instantanée du lien dans le presse-papiers.
 
+### 💾 Sauvegarde locale automatique
+Le fichier est conservé instantanément sur votre ordinateur dans :  
+👉 `~/Images/Capture d'écran`
+
+* **Détection du logiciel :** Les images identifient automatiquement l'application capturée (ex: `google-chrome_aBc123XyZ.png`, `code_xYz987AbC.png`).
+* **Noms uniques :** Une clé aléatoire de 9 caractères est ajoutée à chaque fichier pour éviter tout conflit ou écrasement.
+* **Sécurité :** Vos captures restent stockées sur votre disque dur, même en cas de coupure réseau.
+
+### ☁️ Téléversement en direct & Lien copié
+Pendant que le fichier est sauvegardé en local, vGyShot l'envoie immédiatement sur les services cloud :
+* 📸 **Images :** Envoyées en direct sur **[vgy.me](https://vgy.me)** via votre clé API.
+* 🎥 **Vidéos :** Envoyées directement sur **[Streamable.com](https://streamable.com)** (ou anonymement sur **Catbox.moe**).
+* 📋 **Presse-papiers :** Une fois le transfert terminé, **l'URL publique est automatiquement copiée dans votre presse-papiers**, prête à être collée (`Ctrl+V`) dans un tchat ou document !
+
 ---
 
 ## ✨ Fonctionnalités
