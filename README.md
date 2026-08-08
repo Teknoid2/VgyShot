@@ -25,7 +25,7 @@
 </div>
 
 ---
-## N'oubliez pas d'insérer votre clé API vgy.me & vos identifiants streamable avant toute chose.
+  <p align="center">## N'oubliez pas d'insérer votre clé API vgy.me & vos identifiants streamable avant toute chose.  </p>
 
 
 ## 🚀 Présentation
