@@ -43,7 +43,7 @@ Le fichier est conservé instantanément sur votre ordinateur dans :
 ### ☁️ Téléversement en direct & Lien copié
 Pendant que le fichier est sauvegardé en local, vGyShot l'envoie immédiatement sur les services cloud :
 * 📸 **Images :** Envoyées en direct sur **[vgy.me](https://vgy.me)** via votre clé API.
-* 🎥 **Vidéos :** Envoyées directement sur **[Streamable.com](https://streamable.com)** (ou anonymement sur **Catbox.moe**).
+* 🎥 **Vidéos :** Envoyées directement sur **[Streamable.com](https://streamable.com)** 
 * 📋 **Presse-papiers :** Une fois le transfert terminé, **l'URL publique est automatiquement copiée dans votre presse-papiers**, prête à être collée (`Ctrl+V`) dans un tchat ou document !
 
 ---
