@@ -82,14 +82,5 @@ L'installateur automatique vérifie et installe les paquets nécessaires via `ap
 ## 📦 Installation
 
 Un script d'installation interactif `install_vgyshot.sh` est fourni à la racine du dépôt.
-
-```bash
-# 1. Cloner le dépôt
-git clone [https://github.com/votre-nom-utilisateur/vgyshot.git](https://github.com/votre-nom-utilisateur/vgyshot.git)
-cd vgyshot
-
-# 2. Rendre le script d'installation exécutable
-chmod +x install_vgyshot.sh
-
 # 3. Lancer l'installateur
 ./install_vgyshot.sh
