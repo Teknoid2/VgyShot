@@ -70,7 +70,7 @@ Pendant que le fichier est sauvegardé en local, vGyShot l'envoie immédiatement
 
 ### ☁️ Téléversement Cloud & Intégration
 * **Images :** Téléversement automatique vers **[vgy.me](https://vgy.me)** avec clé API.
-* **Vidéos :** Téléversement sécurisé vers **Streamable** (si identifiants renseignés) ou téléversement anonyme vers **Catbox.moe**.
+* **Vidéos :** Téléversement sécurisé vers **Streamable**
 * Copie automatique du lien final dans le presse-papiers (`xclip`).
 * Notifications système enrichies (`notify-send`).
 * Icône dans la barre d'état (System Tray) avec menu contextuel complet (`YAD`).
