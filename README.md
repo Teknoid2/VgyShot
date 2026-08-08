@@ -1,2 +1,95 @@
-# VgyShot
-Solution complète et légère de capture d'écran
+<div align="center">
+
+  <h1>📸 vGyShot</h1>
+  <p align="center">
+    <b>Solution complète et légère de capture d'écran, capture défilante (scrolling) et enregistrement vidéo pour Linux.</b>
+  </p>
+
+  <p align="center">
+    <a href="#-fonctionnalités">Fonctionnalités</a> •
+    <a href="#-installation">Installation</a> •
+    <a href="#-utilisation">Utilisation</a> •
+    <a href="#-configuration">Configuration</a> •
+    <a href="#-dépendances">Dépendances</a> •
+    <a href="#-structure-du-projet">Structure</a>
+  </p>
+
+  <p align="center">
+    <img src="https://img.shields.io/badge/Platform-Linux%20%2F%20X11-blue?style=for-the-badge&logo=linux" alt="Platform Linux" />
+    <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
+    <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/UI-YAD-orange?style=for-the-badge" alt="YAD" />
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License MIT" />
+  </p>
+
+</div>
+
+---
+
+## 🚀 Présentation
+
+**vGyShot** est un outil puissant et polyvalent conçu pour les environnements Linux (Cinnamon, GNOME, XFCE, MATE, KDE). Il combine la capture d'écran de précision, l'assemblage dynamique de captures défilantes (scrolling screenshots) et l'enregistrement vidéo avec capture audio multicanale, le tout couplé à un système de téléversement automatique vers le cloud et de copie instantanée du lien dans le presse-papiers.
+
+---
+
+## ✨ Fonctionnalités
+
+### 📸 Captures d'écran
+* **Capture de zone (`region`) :** Sélection précise à la souris via `maim` et `slop`.
+* **Capture de fenêtre (`window`) :** Sélection native et automatique de la fenêtre ciblée.
+* **Écran complet (`screen`) :** Capture globale de l'espace de travail.
+* **Capture défilante intelligente (`scroll`) :**
+  * Détection automatique de la zone de défilement (viewport).
+  * Algorithme d'assemblage d'images (stitching) développé en Python (`Pillow`).
+  * Recadrage automatique des en-têtes fixes et barres d'outils du navigateur.
+
+### 🎥 Enregistrement Vidéo & Audio
+* Enregistrement haute performance via `ffmpeg` (codec H.264 / MP4).
+* **Gestion audio dynamique :**
+  * Microphone seul
+  * Son système (Loopback / Monitor)
+  * Combinaison Microphone + Son système
+  * Mode muet
+* **Widget de contrôle :** Fenêtre flottante discrète avec chronomètre en temps réel et bouton d'arrêt rapide, positionnée intelligemment pour éviter le chevauchement de la zone capturée.
+
+### ☁️ Téléversement Cloud & Intégration
+* **Images :** Téléversement automatique vers **[vgy.me](https://vgy.me)** avec clé API.
+* **Vidéos :** Téléversement sécurisé vers **Streamable** (si identifiants renseignés) ou téléversement anonyme vers **Catbox.moe**.
+* Copie automatique du lien final dans le presse-papiers (`xclip`).
+* Notifications système enrichies (`notify-send`).
+* Icône dans la barre d'état (System Tray) avec menu contextuel complet (`YAD`).
+
+---
+
+## 🛠️ Dépendances
+
+L'installateur automatique vérifie et installe les paquets nécessaires via `apt`. Si vous êtes sur une autre distribution, assurez-vous de disposer des éléments suivants :
+
+| Dépendance | Rôle |
+| :--- | :--- |
+| `yad` | Interface graphique (systray, menus, fenêtres de dialogue) |
+| `maim` / `slop` | Sélection et capture de zones graphiques sous X11 |
+| `xdotool` / `xprop` | Simulation d'actions clavier/souris et détection de fenêtres |
+| `xclip` | Gestion du presse-papiers système |
+| `jq` | Parsing et manipulation des données JSON |
+| `curl` | Requêtes HTTP pour les téléversements API |
+| `ffmpeg` | Enregistrement du flux vidéo et mixage audio |
+| `imagemagick` | Manipulation d'images en ligne de commande |
+| `python3` & `python3-pil` | Algorithme d'assemblage (stitching) pour les captures défilantes |
+
+---
+
+## 📦 Installation
+
+Un script d'installation interactif `install_vgyshot.sh` est fourni à la racine du dépôt.
+
+```bash
+# 1. Cloner le dépôt
+git clone [https://github.com/votre-nom-utilisateur/vgyshot.git](https://github.com/votre-nom-utilisateur/vgyshot.git)
+cd vgyshot
+
+# 2. Rendre le script d'installation exécutable
+chmod +x install_vgyshot.sh
+
+# 3. Lancer l'installateur
+./install_vgyshot.sh
