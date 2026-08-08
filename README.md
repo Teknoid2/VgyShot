@@ -82,5 +82,5 @@ L'installateur automatique vérifie et installe les paquets nécessaires via `ap
 ## 📦 Installation
 
 Un script d'installation interactif `install_vgyshot.sh` est fourni à la racine du dépôt.
-# 3. Lancer l'installateur
+# Lancer l'installateur
 ./install_vgyshot.sh
